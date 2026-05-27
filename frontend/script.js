@@ -10,7 +10,7 @@ async function analyzeIncident() {
   resultDiv.innerText = "Generating report...";
 
   try {
-    const response = await fetch("http://localhost:3000/analyze", {
+    const response = await fetch("/analyze", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
